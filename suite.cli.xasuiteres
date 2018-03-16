@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaSuiteResult resultType="VERIFICATION_ERROR" containsSimulation="false">
+  <Message>Total 1 tests failed out of 3 tests.</Message>
+  <Started>20180316-06-25-52</Started>
+  <Ended>20180316-06-26-02</Ended>
+  <CC>
+    <data componentName="XARISCAL" level="Line" percentage="89" executionCount="3">
+      <HitLines>32,35,36,23,39,25,29,31</HitLines>
+      <UntouchedLines>40</UntouchedLines>
+    </data>
+  </CC>
+  <XaUnitResults>
+    <XaUnitResult path="C:/temp/github/test-cases/sub/TestScript1.xactx" containsSimulation="false" resultType="SUCCESS">
+      <CC>
+        <data componentName="XARISCAL" level="Line" percentage="78" executionCount="1">
+          <HitLines>23,25,29,31,32,35,39</HitLines>
+          <UntouchedLines>36,40</UntouchedLines>
+        </data>
+      </CC>
+      <Message />
+    </XaUnitResult>
+    <XaUnitResult path="C:/temp/github/test-cases/TestScript1.xactx" containsSimulation="false" resultType="SUCCESS">
+      <CC>
+        <data componentName="XARISCAL" level="Line" percentage="78" executionCount="1">
+          <HitLines>23,25,29,31,32,35,39</HitLines>
+          <UntouchedLines>36,40</UntouchedLines>
+        </data>
+      </CC>
+      <Message />
+    </XaUnitResult>
+    <XaUnitResult path="C:/temp/github/test-cases/TestScript2.xactx" containsSimulation="false" resultType="VERIFICATION_ERROR">
+      <CC>
+        <data componentName="XARISCAL" level="Line" percentage="78" executionCount="1">
+          <HitLines>23,25,29,31,35,36,39</HitLines>
+          <UntouchedLines>32,40</UntouchedLines>
+        </data>
+      </CC>
+      <Message />
+    </XaUnitResult>
+  </XaUnitResults>
+</XaSuiteResult>

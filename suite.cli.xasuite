@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaSuite xmlns="http://www.xact.dk/xatester/v/1" environmentId="simulator" haltAtFailure="false">
+  <Description>Generated suite by XaTester CLI for folder: C:/temp/github/test-cases</Description>
+  <XaUnits>
+    <Path>sub/TestScript1.xactx</Path>
+    <Path>TestScript1.xactx</Path>
+    <Path>TestScript2.xactx</Path>
+  </XaUnits>
+</XaSuite>

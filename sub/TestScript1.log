@@ -1,0 +1,31 @@
+06:25:52.488 COMMENT   XaUnit         XaUnit execution started
+06:25:52.493 INFO      XaUnit         Using context settings:
+  Environment id                : simulator
+  Environment type              : Batch
+  Operating system              : UNIX
+  Server address                : 192.168.186.131
+  Server port                   : 8888
+  Job execution timeout seconds : 300
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : 
+  Codepage                      : 
+  Host user Id                  : XATUSER
+06:25:52.495 INFO      Component      Interpreting Component: XARISCAL program:XARISCAL
+06:25:52.532 LOG       Simulator      Code coverage is on and default ip/port is used :192.168.186.131:9000. Files will be located under the path: /var/xatester/CC/79d1daf3-3149-47c3-b90f-094111fb08f4
+06:25:52.536 INFO      Simulator      Sending Module execution request to Host for module:XARISCAL rollback:false
+06:25:52.575 LOG       Simulator      Connected to FTP server
+06:25:52.674 LOG       Simulator      Uploading input data for module XARISCAL
+06:25:52.680 LOG       Simulator      Sending request to host
+06:25:52.691 LOG       Simulator      Request to host: <XATZREQ><xatz_request><userid>XATUSER</userid><xpassword>XXX</xpassword><operation>EXECUTE</operation><runat>DAY</runat><loglevel>log</loglevel><inputfilepath>XAT_Module.i.xml</inputfilepath><outputfilepath>XAT_Module.o.xml</outputfilepath><runtime>BATCH</runtime><callinterface /><applid /><db2plan>DBAG</db2plan><db2id>DB2ID</db2id><rollback>false</rollback><jobdirectory>XAJob_ea26a994</jobdirectory><debug>false</debug><amode24>false</amode24><members><membername>XARISCAL</membername></members><loads><mainload>XATESTER.SIMU.LOAD</mainload></loads><codecoverage>true</codecoverage><ccip>192.168.186.131</ccip><ccport>9000</ccport><ccid>79d1daf3-3149-47c3-b90f-094111fb08f4</ccid><cctag /><cclevel>Line</cclevel><ccpath>/var/xatester/CC</ccpath></xatz_request></XATZREQ>
+06:25:52.703 LOG       Simulator      Response from host: <ProgramInterface><xatz_response><resultcode>0</resultcode><resultmessage>Module execution was simulated</resultmessage><jobid>JOB00101</jobid></xatz_response></ProgramInterface>
+06:25:52.711 LOG       Simulator      Response received from Host. Message:Module execution was simulated JobId:JOB00101
+06:25:52.714 INFO      Simulator      Job has been started at host with JobId:JOB00101
+06:25:52.716 INFO      Simulator      Waiting for Execution Result from Host
+06:25:55.725 WARNING   Simulator      Unable to convert program exit code to number: 
+06:25:55.726 LOG       Simulator      Setting execution variable 'jobid' to JOB00101
+06:25:55.727 LOG       Simulator      Setting execution variable 'programexit' to 0
+06:25:55.741 INFO      Component      Verifying program exit code: 0 against verify expression: value < 8
+06:25:56.042 INFO      Component      Program exit code was verified to be accepted by the expression: value < 8
+06:25:56.044 INFO      Component      Finished interpreting Component: XARISCAL program:XARISCAL
+06:25:56.046 COMMENT   XaUnit         XaUnit execution ended

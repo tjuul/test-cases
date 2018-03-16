@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaUnitResult resultType="SUCCESS" containsSimulation="false">
+  <ExecutionId>1871e207-7cf2-4f58-b04b-8c35d70811dc</ExecutionId>
+  <Message />
+  <AST>
+    <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1">
+      <Description />
+      <Component id="xariscal" label="XARISCAL" moduleName="XARISCAL" programExitVerify="value &lt; 8" programExit="0" rollback="false">
+        <Data>
+          <import>
+            <customer>
+              <age>11</age>
+            </customer>
+          </import>
+          <export>
+            <risc expected="22">22</risc>
+          </export>
+        </Data>
+      </Component>
+      <ExtensionData />
+      <Tags />
+      <MetaData>
+        <Component name="XARISCAL" type="COBOL">
+          <INOUT>
+            <import>
+              <customer>
+                <age type="NumericDisplay" length="3" bytes="3" signed="false" decimals="0" />
+              </customer>
+            </import>
+            <export>
+              <risc type="NumericDisplay" length="3" bytes="3" signed="false" decimals="0" />
+            </export>
+          </INOUT>
+        </Component>
+      </MetaData>
+    </XaUnit>
+  </AST>
+  <Context>
+    <ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="simulator" logLevel="LOG" remote="false" storeHistory="false" useSimulations="true" uploadResult="false" timeout="300" readTimeout="30" jobInfoInterval="3" userid="XATUSER" iscc="true" cclevel="Line" cctag="">
+      <platformruntime db2id="DB2ID" database="test" driver="org.h2.Driver" uri="jdbc:h2:tcp://192.168.186.131:9092/mem:${database}" environmenttype="BATCH" db2plan="DBAG" callinterface="NONE" />
+      <ExtensionData />
+      <ExtensionData componentName="xariscal" componentId="59393e788d51ac2a1d97a45f">
+        <Parameter key="db2id">
+          <Value>DB2ID</Value>
+        </Parameter>
+        <Parameter key="sourcelibrary">
+          <Value>XATESTER.SIMU.COBOL</Value>
+        </Parameter>
+        <Parameter key="db2plan">
+          <Value>DBAG</Value>
+        </Parameter>
+        <Parameter key="loadlibrary">
+          <Value>XATESTER.SIMU.LOAD</Value>
+        </Parameter>
+        <Parameter key="sourcelibraries">
+          <Value>XATESTER.SIMU.COBCOPY</Value>
+        </Parameter>
+        <Parameter key="callinterface">
+          <Value>NONE</Value>
+        </Parameter>
+      </ExtensionData>
+      <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="xariscal" path="TestScript1.xaunit">
+        <Description>Executes XARISCAL one time for age 11, contains an external resourse and uses a validation file. Uses CC</Description>
+        <Component id="xariscal" label="XARISCAL" moduleName="XARISCAL" programExitVerify="value &lt; 8" rollback="false">
+          <Data>
+            <import>
+              <customer>
+                <age>11</age>
+              </customer>
+            </import>
+            <export>
+              <risc expected="22" />
+            </export>
+          </Data>
+        </Component>
+        <ExtensionData />
+        <Tags />
+        <MetaData>
+          <Component name="XARISCAL" type="COBOL">
+            <INOUT>
+              <import>
+                <customer>
+                  <age type="NumericDisplay" length="3" bytes="3" signed="false" decimals="0" />
+                </customer>
+              </import>
+              <export>
+                <risc type="NumericDisplay" length="3" bytes="3" signed="false" decimals="0" />
+              </export>
+            </INOUT>
+          </Component>
+        </MetaData>
+      </XaUnit>
+      <ExternalResources />
+    </ExecutionContext>
+  </Context>
+  <Started>20180316-06-25-56</Started>
+  <Ended>20180316-06-25-59</Ended>
+</XaUnitResult>
