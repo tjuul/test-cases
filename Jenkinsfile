@@ -7,7 +7,9 @@ pipeline {
       }
     }
 	stage ('XaTester - Build') {
-        step([$class: 'XaTesterBuilder', cliPath: '/opt/xatester/cli', copyReportsToReportFolder: true, credentialsId: '', environmentId: '', folderPath: '.', recursive: true, reportFolder: 'TestResults', sonarVersion: '6', sourceFolder: 'COBOL', xaTesterServerUrl: 'https://localhost:8447'])
+		steps {
+			step([$class: 'XaTesterBuilder', cliPath: '/opt/xatester/cli', copyReportsToReportFolder: true, credentialsId: '', environmentId: '', folderPath: '.', recursive: true, reportFolder: 'TestResults', sonarVersion: '6', sourceFolder: 'COBOL', xaTesterServerUrl: 'https://localhost:8447'])
+		}
 	}
   }
 }
