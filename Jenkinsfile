@@ -1,14 +1,11 @@
 pipeline {
   agent any
-  stages {
-    stage('') {
-      steps {
-        echo 'hello world'
-      }
-    }
+  stages {    
 	stage ('XaTester - Build') {
 		steps {
-			step([$class: 'XaTesterBuilder', cliPath: '/opt/xatester/cli', copyReportsToReportFolder: true, credentialsId: '', environmentId: '', folderPath: '.', recursive: true, reportFolder: 'TestResults', sonarVersion: '6', sourceFolder: 'COBOL', xaTesterServerUrl: 'https://localhost:8447'])
+			echo 'Hello - XaTester plugin build'
+			
+			step([$class: 'XaTesterBuilder', cliPath: 'C:/eclipse_workspaces/xatester_workspace/XaTesterOnHost/build/libs', copyReportsToReportFolder: true, credentialsId: 'XATUSER', environmentId: '', folderPath: '.', recursive: true, reportFolder: 'TestResults', sonarVersion: '6', sourceFolder: 'COBOL', xaTesterServerUrl: 'https://192.168.186.131'])
 		}
 	}
   }
